@@ -1,0 +1,105 @@
+{
+  "name": "next-gen-ui",
+  "version": "2.0.4",
+  "private": false,
+  "license": "MIT",
+  "author": "Ashish Kumar Mishhra",
+  "repository": "https://github.com/ashishmishra-bit/next-gen-ui.git",
+  "main": "/lib/index.js",
+  "homepage": "https://nextgenui.in/",
+  "description": "Next Gen Ui is a home for front-end & UI/Ux developers. We provide all the necessary components required to build a scalable front-end application which suits the user experience in a unique way.",
+  "keywords": [
+    "Next.js",
+    "React.js",
+    "Next Gen UI",
+    "Tailwind  Css",
+    "Component UI",
+    "Front-end",
+    "Loaders",
+    "Login Forms",
+    "Spinners",
+    "Buttons",
+    "Link",
+    "Forms",
+    "Search",
+    "Text-Input"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
+    "start": "react-scripts start",
+    "build": "tsc --build \"./tsconfig.json\"",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "clean": "rm -rf ./lib"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1",
+    "styled-components": ">=5.3.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/node-logger": "^6.4.9",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.9",
+    "@svgr/cli": "^6.1.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.13",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.18",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.2",
+    "webpack": "^5.65.0"
+  }
+}
